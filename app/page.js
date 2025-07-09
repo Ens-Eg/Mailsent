@@ -38,9 +38,9 @@ export default function Home() {
 
   const planPrices = {
     first: 1000,
-    second: 2000,
+    second: 2500,
     third: 3000,
-    fourth: 4000,
+    fourth: 5000,
   };
   const [price, setPrice] = useState(0);
 
@@ -145,7 +145,7 @@ export default function Home() {
           disableStepIndicators={true}
         >
           <Step>
-            <h2 className="text-2xl font-bold mb-4">بينات طالب الخدمة</h2>
+            <h2 className="text-2xl font-bold mb-4">بيانات طالب الخدمة</h2>
             <Label htmlFor="name" className="mb-2 font-semibold text-lg">
               الاسم :
             </Label>
@@ -188,7 +188,7 @@ export default function Home() {
             />
             {!isValidStep2 && (
               <p className="text-yellow-500 text-sm">
-                يجب أن يبدأ اسم الدومين بـ @
+             يرجي ادخال اسم النطاق الذى ترغب فى
               </p>
             )}
           </Step>
@@ -223,7 +223,7 @@ export default function Home() {
               ""
             ) : (
               <h2 className="text-lg font-bold mt-10">
-                سعر الباقة: {price} جنيه
+               إبتداء من : {price} جنيه
               </h2>
             )}
           </Step>
